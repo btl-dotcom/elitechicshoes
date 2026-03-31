@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Chi Tiết | EliteChic Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .detail-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: var(--space-lg);
+            margin-top: 100px;
+            padding-bottom: var(--space-xl);
+        }
+        .product-gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        .main-img {
+            border-radius: 8px;
+            overflow: hidden;
+            width: 100%;
+        }
+        .thumb-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        .thumb-item {
+            border: 2px solid transparent;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .thumb-item.active {
+            border-color: var(--secondary);
+        }
+        .product-actions {
+            display: flex;
+            gap: 1rem;
+            margin: var(--space-sm) 0;
+        }
+        .size-selector {
+            margin: var(--space-sm) 0;
+        }
+        .size-list {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .size-box {
+            width: 45px;
+            height: 45px;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .size-box:hover, .size-box.active {
+            border-color: var(--secondary);
+            color: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">ELITECHIC</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="about.html">Về Chúng Tôi</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container detail-container">
+        <div class="product-gallery">
+            <div class="main-img">
+                <img id="mainImage" src="Ảnh gốc/1.webp" alt="EliteChic Product">
+            </div>
+            <div class="thumb-grid">
+                <div class="thumb-item active" onclick="changeImage('Ảnh gốc/1.webp', this)">
+                    <img src="Ảnh gốc/1.webp" alt="Thumb 1">
+                </div>
+                <div class="thumb-item" onclick="changeImage('Ảnh gốc/sg-11134201-82607-mmac7jmonpc49c.webp', this)">
+                    <img src="Ảnh gốc/sg-11134201-82607-mmac7jmonpc49c.webp" alt="Thumb 2">
+                </div>
+                <div class="thumb-item" onclick="changeImage('Ảnh gốc/sg-11134201-825zt-mm8x64himkn43a@resize_w900_nl.webp', this)">
+                    <img src="Ảnh gốc/sg-11134201-825zt-mm8x64himkn43a@resize_w900_nl.webp" alt="Thumb 3">
+                </div>
+                <div class="thumb-item" onclick="changeImage('Ảnh gốc/sg-11134201-825zz-mmagh6wrkyrzed@resize_w900_nl.webp', this)">
+                    <img src="Ảnh gốc/sg-11134201-825zz-mmagh6wrkyrzed@resize_w900_nl.webp" alt="Thumb 4">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-details">
+            <p class="product-category">Lịch Lãm / Oxford</p>
+            <h1 style="margin-bottom: 0.5rem;">Oxford Classic Brown</h1>
+            <p class="product-price" style="font-size: 1.5rem; margin-bottom: var(--space-sm);">1.250.000₫</p>
+            <p>Mẫu giày Oxford kinh điển được chế tác từ da bò nguyên tấm thượng hạng. Phù hợp cho những buổi tiệc sang trọng hoặc môi trường công sở chuyên nghiệp.</p>
+            
+            <div class="size-selector">
+                <h4>Kích Thước (Size)</h4>
+                <div class="size-list">
+                    <div class="size-box">39</div>
+                    <div class="size-box active">40</div>
+                    <div class="size-box">41</div>
+                    <div class="size-box">42</div>
+                    <div class="size-box">43</div>
+                </div>
+            </div>
+
+            <div class="product-actions">
+                <button class="btn btn-primary" style="flex: 2;">Thêm Vào Giỏ Hàng</button>
+                <button class="btn btn-outline" style="flex: 1;">Yêu Thích</button>
+            </div>
+
+            <div style="margin-top: var(--space-md); border-top: 1px solid #eee; padding-top: 1rem;">
+                <h4>Mô Tả Sản Phẩm</h4>
+                <ul style="padding-left: 1rem; margin-top: 0.5rem; color: var(--text-muted);">
+                    <li>Chất liệu: Da bò thật 100%</li>
+                    <li>Đế: Cao su đúc nguyên khối chống trơn trượt</li>
+                    <li>Lót: Da thật êm ái, thoáng khí</li>
+                    <li>Bảo hành: 12 tháng kể từ ngày mua</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 EliteChic Shoes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(src, el) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumb-item').forEach(item => item.classList.remove('active'));
+            el.classList.add('active');
+        }
+    </script>
+</body>
+</html>

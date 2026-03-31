@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ | EliteChic Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-md);
+        }
+        .contact-form {
+            background-color: var(--accent);
+            padding: var(--space-md);
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: var(--space-sm);
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            height: 150px;
+        }
+        .contact-info-item {
+            margin-bottom: var(--space-md);
+        }
+        .contact-info-item h4 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">ELITECHIC</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="about.html">Về Chúng Tôi</a></li>
+                <li><a href="contact.html" style="color: var(--secondary);">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header style="padding-top: 100px; text-align: center; background-color: var(--primary); color: #fff; padding-bottom: 50px;">
+        <div class="container">
+            <h1 style="color: #fff;">Kết Nối Với EliteChic</h1>
+            <p style="color: #ccc;">Chúng tôi luôn lắng nghe ý kiến của bạn</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <h4>Địa Chỉ</h4>
+                        <p>123 Đường Fashion, Quận 1, TP. Hồ Chí Minh</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4>Điện Thoại</h4>
+                        <p>Hotline: 0123 456 789 (Zalo)</p>
+                        <p>Kinh doanh: 0987 654 321</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4>Email</h4>
+                        <p>contact@elitechic.vn</p>
+                        <p>support@elitechic.vn</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4>Giờ Làm Việc</h4>
+                        <p>Thứ 2 - Thứ 7: 09:00 - 21:00</p>
+                        <p>Chủ Nhật: 09:00 - 18:00</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Gửi Tin Nhắn</h3>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Họ và Tên</label>
+                            <input type="text" id="name" placeholder="Nhập tên của bạn">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nội Dung</label>
+                            <textarea id="message" placeholder="Bạn cần chúng tôi hỗ trợ điều gì?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi Yêu Cầu</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 EliteChic Shoes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm | EliteChic Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .shop-container {
+            display: flex;
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+        }
+        .sidebar {
+            width: 250px;
+            flex-shrink: 0;
+        }
+        .filter-group {
+            margin-bottom: var(--space-md);
+        }
+        .filter-group h4 {
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        .filter-list li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .filter-list li:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+        .shop-content {
+            flex-grow: 1;
+        }
+        .header-bg {
+            height: 300px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Bộ ảnh listing sản phẩm/Ảnh tay cầm sản phẩm/Gemini_Generated_Image_uhg2mluhg2mluhg2.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">ELITECHIC</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="products.html" style="color: var(--secondary);">Sản Phẩm</a></li>
+                <li><a href="about.html">Về Chúng Tôi</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header-bg">
+        <div class="container">
+            <h1>Tất Cả Sản Phẩm</h1>
+            <p>Khám phá phong cách của riêng bạn</p>
+        </div>
+    </header>
+
+    <div class="container shop-container">
+        <aside class="sidebar">
+            <div class="filter-group">
+                <h4>Danh Mục</h4>
+                <ul class="filter-list">
+                    <li>Tất cả giày</li>
+                    <li>Giày Oxford</li>
+                    <li>Giày Loafers</li>
+                    <li>Giày Chelsea Boots</li>
+                    <li>Giày Mềm</li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h4>Chất Liệu</h4>
+                <ul class="filter-list">
+                    <li>Da Bò Thật</li>
+                    <li>Da Suede</li>
+                    <li>Da Bóng (Patent)</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="shop-content">
+            <div class="product-grid" style="padding-top: 0;">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Ảnh gốc/1.webp" alt="Oxford Classic">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Oxford</p>
+                        <h3 class="product-title">Oxford Classic Brown</h3>
+                        <p class="product-price">1.250.000₫</p>
+                        <a href="product-detail.html" class="btn btn-outline" style="margin-top: 1rem;">Mua Ngay</a>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Ảnh gốc/sg-11134201-82607-mmac7jmonpc49c.webp" alt="Modern Loafer">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Loafers</p>
+                        <h3 class="product-title">Modern Suede Loafer</h3>
+                        <p class="product-price">1.100.000₫</p>
+                        <a href="product-detail.html" class="btn btn-outline" style="margin-top: 1rem;">Mua Ngay</a>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Ảnh gốc/sg-11134201-825zt-mm8x64himkn43a@resize_w900_nl.webp" alt="Chelsea Boot">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Boots</p>
+                        <h3 class="product-title">Dark Chelsea Boot</h3>
+                        <p class="product-price">1.450.000₫</p>
+                        <a href="product-detail.html" class="btn btn-outline" style="margin-top: 1rem;">Mua Ngay</a>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Ảnh gốc/sg-11134201-825zz-mmagh6wrkyrzed@resize_w900_nl.webp" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Giày Mềm</p>
+                        <h3 class="product-title">Elegant Soft Leather</h3>
+                        <p class="product-price">950.000₫</p>
+                        <a href="product-detail.html" class="btn btn-outline" style="margin-top: 1rem;">Mua Ngay</a>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Ảnh gốc/sg-11134201-8260w-mm8x652a3ocj78@resize_w900_nl.webp" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Loafers</p>
+                        <h3 class="product-title">Classic Penny Loafer</h3>
+                        <p class="product-price">1.150.000₫</p>
+                        <a href="product-detail.html" class="btn btn-outline" style="margin-top: 1rem;">Mua Ngay</a>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Ảnh gốc/sg-11134201-82627-mmagh7c3xdz468@resize_w900_nl.webp" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Moccasin</p>
+                        <h3 class="product-title">Casual Driver Mocs</h3>
+                        <p class="product-price">890.000₫</p>
+                        <a href="product-detail.html" class="btn btn-outline" style="margin-top: 1rem;">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3 class="logo">ELITECHIC</h3>
+                <p>Nâng tầm phong cách quý ông Việt với những thiết kế đẳng cấp thế giới.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Kết</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="about.html">Về Chúng Tôi</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kết Nối</h3>
+                <p>Hotline: 0123 456 789</p>
+                <p>Email: contact@elitechic.vn</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EliteChic Shoes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
